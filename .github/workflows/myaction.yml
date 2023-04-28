@@ -13,7 +13,6 @@ jobs:
        run: echo Hello, GitHub Actions!
   # jobs
   build-and-test:
-    needs: [say-hello]
     runs-on: ubuntu-latest
     steps:
       - name: Check out this repo
