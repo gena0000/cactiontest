@@ -10,7 +10,7 @@ jobs:
       - name: Say hello
         run: echo Hello, GitHub Actions!
 
-   job_2:
+  job_2:
     name: build and test
     runs-on: ubuntu-latest
     steps:
