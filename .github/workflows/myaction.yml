@@ -6,7 +6,6 @@ on: [push]
 
 #Jobs run in  parallal by default, each row steps in sequence
 jobs:
-
   say-hello:
     runs-on: ubuntu-latest
     steps:
