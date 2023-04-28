@@ -6,13 +6,15 @@ on: [push]
 
 # Jobs run in  parallal by default, each row steps in sequence
 jobs:
-  say-hello:
+  job_1:
+    name: say hello
     runs-on: ubuntu-latest
     steps:
-      -name: Say hello
-       run: echo Hello, GitHub Actions!
-  # jobs
-  build-and-test:
+      - name: Say hello
+        run: echo Hello, GitHub Actions!
+
+   job_2:
+    name: build and test
     runs-on: ubuntu-latest
     steps:
       - name: Check out this repo
