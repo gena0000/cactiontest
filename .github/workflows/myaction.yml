@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -name: Say hello
-       run: echo "Hello, GitHub Actions!"
+       run: echo Hello, GitHub Actions!
   # jobs
   build-and-test:
     needs: [say-hello]
