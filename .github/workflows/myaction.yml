@@ -9,4 +9,5 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-     run: echo "Hello, GitHub Actions!"
+      - name: My first step
+        run: echo Hello, GitHub Actions!
