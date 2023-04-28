@@ -6,9 +6,7 @@ on: [push]
 
 #Jobs run in  parallal by default, each row steps in sequence
 jobs: 
-
-#Job to print something out
-say-hello:
-	runs-on:ubuntu-latest
-	steps:
-	  - run: echo "Hello, GitHub Actions!"
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+     run: echo "Hello, GitHub Actions!"
