@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -name: Say hello
-       run: echo Hello, GitHub Actions!
-# jobs
+       run: echo "Hello, GitHub Actions!"
+  # jobs
   build-and-test:
     needs: [say-hello]
     runs-on: ubuntu-latest
@@ -19,7 +19,5 @@ jobs:
       - name: Check out this repo
         uses: actions/checkout@v3
 
-# install packages
-  - name: Install dependencies
-    run: sudo apt install -y build-essential python3
-
+      - name: Install dependencies
+        run: sudo apt install -y build-essential python3
