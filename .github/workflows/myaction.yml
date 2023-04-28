@@ -11,3 +11,21 @@ jobs:
     steps:
       - name: My first step
         run: echo Hello, GitHub Actions!
+#jobs
+  needs: [say-hello]
+  runs-on: ubuntu-latest
+  steps:
+# Use actions in
+-name: Check out this repo
+ uses: actions/checkout@v3
+
+#install packages
+-name: Install dependencies
+ run: sudo apt install -y build-essential python3
+
+#show
+-run: pwd
+
+#test
+-name: Run test
+run: python3 test.py
